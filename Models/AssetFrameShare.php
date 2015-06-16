@@ -1,0 +1,39 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of AssetFrameShare
+ *
+ * @author snandyala
+ */
+class AssetFrameShare {
+    //put your code here
+   
+    public $id;
+    public $entity_id ;
+    public $entity_type;
+    public $usr_id;
+    public $crt_usr_id;
+    public $crt_dtm;
+    public $lud_usr_id;
+    public $lud_dtm;
+    public $is_hide;
+    
+      public function __construct($id,$entity_id,$entity_type, $usr_id, $crt_dtm,$lud_usr_id,$lud_dtm,$is_hide)
+      { 
+        $this->id = $id; 
+        $this->entity_id = $entity_id;  
+        $this->entity_type = $entity_type;  
+        $this->usr_id = $usr_id;  
+        $this->crt_usr_id = $crt_usr_id;  
+        $this->crt_dtm = $crt_dtm;  
+        $this->lud_usr_id = $lud_usr_id; 
+        $this->lud_dtm = $lud_dtm;  
+        $this->is_hide = $is_hide;  
+      }
+}
